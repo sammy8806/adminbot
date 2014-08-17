@@ -1,0 +1,3 @@
+# Kommasepariert, möglichst OHNE Leerzeichen
+autoloadActions=mucLogger
+autojoinRoom=##AutojoinRoom##

@@ -1,0 +1,7 @@
+# Bitte ALLES eintragen
+username=##LoginName##
+password=AIR_##LoginPassword##
+resource=pvp.net
+showName=##IngameName##
+server=chat.eu.lol.riotgames.com
+port=5223

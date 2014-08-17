@@ -1,0 +1,4 @@
+out/
+*.log
+login.properties
+muc.properties
