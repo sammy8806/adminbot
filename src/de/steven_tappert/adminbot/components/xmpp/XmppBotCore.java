@@ -7,10 +7,14 @@ import de.steven_tappert.adminbot.components.xmpp.manager.PresenceManager;
 import de.steven_tappert.tools.Logger;
 import de.steven_tappert.tools.SingletonHelper;
 import org.jivesoftware.smack.*;
+import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.chat2.ChatManager;
+import org.jivesoftware.smack.chat2.OutgoingChatMessageListener;
+import org.jivesoftware.smack.packet.Message;
 import org.jivesoftware.smack.roster.Roster;
 import org.jivesoftware.smack.tcp.XMPPTCPConnection;
 import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
+import org.jxmpp.jid.EntityBareJid;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -80,6 +84,9 @@ public class XmppBotCore extends XMPPTCPConnection {
         rM.getRoster().addRosterListener(new XmppRosterListener());
         ChatManager chatManager = ChatManager.getInstanceFor(botXmppCore);
         chatManager.addIncomingListener(new IncomingMessageManager());
+        chatManager.addOutgoingListener((to, message, chat) -> {
+            message.setType(Message.Type.chat);
+        });
     }
 
     public XMPPConnection getInstance() {
