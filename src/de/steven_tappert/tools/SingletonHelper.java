@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class SingletonHelper {
 
-    protected static HashMap<String, Object> instances = new HashMap<String, Object>();
+    private static HashMap<String, Object> instances = new HashMap<String, Object>();
 
     public static Object getInstance(String name) {
         if(!instances.containsKey(name.toLowerCase())) {
@@ -24,6 +24,10 @@ public class SingletonHelper {
 
     public static void registerInstance(Object obj) {
         String instanceName = obj.getClass().getSimpleName().toLowerCase();
+        SingletonHelper.registerInstance(obj, instanceName);
+    }
+
+    public static void registerInstance(Object obj, String instanceName) {
         if(!instances.containsKey(instanceName)) {
             instances.put(instanceName, obj);
             Logger.log(SingletonHelper.class.getSimpleName(), "registerInstance", "debug", "Instance with name \""+instanceName+"\" successfully registered");

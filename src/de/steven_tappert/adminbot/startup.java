@@ -1,5 +1,6 @@
 package de.steven_tappert.adminbot;
 
+import de.steven_tappert.adminbot.components.ts3.Ts3Component;
 import de.steven_tappert.adminbot.components.xmpp.XmppComponent;
 import de.steven_tappert.tools.SingletonHelper;
 
@@ -11,5 +12,6 @@ public class startup {
         adminbot bot = (adminbot) SingletonHelper.getInstance("adminbot");
 
         bot.loadComponent(new XmppComponent());
+        bot.loadComponent(new Ts3Component());
     }
 }

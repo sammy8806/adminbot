@@ -39,16 +39,16 @@ public class IncomingMessageManager implements IncomingChatMessageListener {
                     loadCommand(commandString, chat, message);
 
                 } else {
-                    if (chat != null)
-                        chat.send("Not a valid command! [" + message.getBody() + "]");
+                    if (chat != null) {
+                        loadCommand("chat", chat, message);
+                        // chat.send("Not a valid command! [" + message.getBody() + "]");
+                    }
                 }
 
                 // chat.sendMessage("Your Text was: " + message.getBody());
                 // Logger.log(this, "processMessage", "debug", "Your Text was: " + message.getBody());
             } catch (XMPPException e) {
                 Logger.log(this, "processMessage", "debug", e.getMessage());
-            } catch (SmackException.NotConnectedException | InterruptedException e) {
-                e.printStackTrace();
             }
         }
     }
@@ -58,6 +58,7 @@ public class IncomingMessageManager implements IncomingChatMessageListener {
             Logger.log(this, "getCommand", "debug", "Beforce Call [" + command + "]");
             XmppChatCommand chatCmd = null;
             chatCmd = XmppCommandCache.getCommand(command);
+            // TODO: Authentication check here!
             chatCmd.runCommand(XmppBotCore.botXmppCore, chat, message);
             Logger.log(this, "getCommand", "debug", "After Call");
         } catch (ClassNotFoundException e) {

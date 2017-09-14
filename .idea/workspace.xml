@@ -1,431 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39cd1785-c87d-4cba-a098-df684e31f463" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_igniterealtime_smack_smack_extensions_4_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_igniterealtime_smack_smack_im_4_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_igniterealtime_smack_smack_java7_4_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_igniterealtime_smack_smack_tcp_4_2_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/muc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppChatManagerListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/XmppMucManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucActionInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucLogger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/AbstractConnectionListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/AccountManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/Chat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ChatManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ChatManagerListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/Connection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ConnectionConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ConnectionCreationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ConnectionListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/MessageListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/NonSASLAuthentication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/OpenTrustManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PacketCollector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PacketInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PacketListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PacketReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PacketWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PrivacyList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PrivacyListListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/PrivacyListManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ReconnectionManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/Roster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/RosterEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/RosterGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/RosterListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/SASLAuthentication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/ServerTrustManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/SmackConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/UserAuthentication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/XMPPConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/XMPPException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/debugger/ConsoleDebugger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/debugger/LiteDebugger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/debugger/SmackDebugger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/debugger/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/AndFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/FromContainsFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/FromMatchesFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/IQTypeFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/MessageTypeFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/NotFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/OrFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/PacketExtensionFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/PacketFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/PacketIDFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/PacketTypeFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/ThreadFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/ToContainsFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/filter/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Authentication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Bind.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/DefaultPacketExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/IQ.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Message.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Packet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/PacketExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Presence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Privacy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/PrivacyItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Registration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/RosterPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/Session.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/StreamError.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/XMPPError.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/packet/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/provider/EmbeddedExtensionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/provider/IQProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/provider/PacketExtensionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/provider/PrivacyProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/provider/ProviderManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/provider/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/proxy/DirectSocketFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/proxy/HTTPProxySocketFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/proxy/ProxyException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/proxy/ProxyInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/proxy/Socks4ProxySocketFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/proxy/Socks5ProxySocketFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLAnonymous.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLCramMD5Mechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLDigestMD5Mechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLExternalMechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLGSSAPIMechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLMechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/SASLPlainMechanism.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/sasl/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/Base64.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/Cache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/DNSUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/ObservableReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/ObservableWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/PacketParserUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/ReaderListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/SyncPacketSend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/WriterListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/AbstractEmptyIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/AbstractHashedMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/AbstractKeyValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/AbstractMapEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/AbstractReferenceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/DefaultMapEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/EmptyIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/EmptyMapIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/IterableMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/KeyValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/MapIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/ReferenceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/collections/ResettableIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smack/util/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/ChatState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/ChatStateListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/ChatStateManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/DefaultMessageEventRequestListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/Form.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/FormField.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/GroupChatInvitation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/LastActivityManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/MessageEventManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/MessageEventNotificationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/MessageEventRequestListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/MultipleRecipientInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/MultipleRecipientManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/NodeInformationProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/OfflineMessageHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/OfflineMessageManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/PEPListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/PEPManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/PrivateDataManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/RemoteRosterEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/ReportedData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/RosterExchangeListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/RosterExchangeManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/ServiceDiscoveryManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/SharedGroupManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/XHTMLManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/XHTMLText.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bookmark/BookmarkManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bookmark/BookmarkedConference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bookmark/BookmarkedURL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bookmark/Bookmarks.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bookmark/SharedBookmark.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/BytestreamListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/BytestreamManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/BytestreamRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/BytestreamSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/CloseListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/DataListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/InBandBytestreamListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/InBandBytestreamManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/InBandBytestreamRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/InBandBytestreamSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/InitiationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/packet/Close.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/packet/Data.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/packet/DataPacketExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/packet/Open.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/provider/CloseIQProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/provider/DataPacketProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/ibb/provider/OpenIQProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/InitiationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5BytestreamListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5BytestreamManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5BytestreamRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5BytestreamSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5ClientForInitiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5Proxy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/Socks5Utils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/packet/Bytestream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/bytestreams/socks5/provider/BytestreamsProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/commands/AdHocCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/commands/AdHocCommandManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/commands/AdHocCommandNote.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/commands/LocalCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/commands/LocalCommandFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/commands/RemoteCommand.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/debugger/EnhancedDebugger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/debugger/EnhancedDebuggerWindow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/debugger/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/FaultTolerantNegotiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/FileTransfer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/FileTransferListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/FileTransferManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/FileTransferNegotiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/FileTransferRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/IBBTransferNegotiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/IncomingFileTransfer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/OutgoingFileTransfer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/Socks5TransferNegotiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/filetransfer/StreamNegotiator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/Affiliate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/ConnectionDetachedPacketCollector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/DeafOccupantInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/DefaultParticipantStatusListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/DefaultUserStatusListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/DiscussionHistory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/HostedRoom.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/InvitationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/InvitationRejectionListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/MultiUserChat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/Occupant.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/PacketMultiplexListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/ParticipantStatusListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/RoomInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/RoomListenerMultiplexor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/SubjectUpdatedListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/UserStatusListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/muc/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/AdHocCommandData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/AttentionExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/ChatStateExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/DataForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/DefaultPrivateData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/DelayInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/DelayInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/DiscoverInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/DiscoverItems.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/Header.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/HeadersExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/LastActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/MUCAdmin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/MUCInitialPresence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/MUCOwner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/MUCUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/MessageEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/MultipleAddresses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/Nick.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/OfflineMessageInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/OfflineMessageRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/PEPEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/PEPItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/PEPPubSub.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/PrivateData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/RosterExchange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/SharedGroupsInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/StreamInitiation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/Time.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/VCard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/Version.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/XHTMLExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/packet/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/AdHocCommandDataProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/DataFormProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/DelayInfoProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/DelayInformationProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/DiscoverInfoProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/DiscoverItemsProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/EmbeddedExtensionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/HeaderProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/HeadersProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/MUCAdminProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/MUCOwnerProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/MUCUserProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/MessageEventProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/MultipleAddressesProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/PEPProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/PrivateDataProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/RosterExchangeProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/StreamInitiationProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/VCardProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/XHTMLExtensionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/provider/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/AccessModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/Affiliation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/AffiliationsExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ChildrenAssociationPolicy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/CollectionNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ConfigurationEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ConfigureForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ConfigureNodeFields.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/EmbeddedPacketExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/EventElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/EventElementType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/FormNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/FormNodeType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/FormType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/GetItemsRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/Item.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ItemDeleteEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ItemPublishEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ItemReply.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/ItemsExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/LeafNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/Node.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/NodeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/NodeExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/NodeType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/OptionsExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/PayloadItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/PresenceState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/PubSubElementType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/PubSubManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/PublishItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/PublishModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/RetractItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/SimplePayload.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/SubscribeExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/SubscribeForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/SubscribeOptionFields.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/Subscription.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/SubscriptionEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/SubscriptionsExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/UnsubscribeExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/listener/ItemDeleteListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/listener/ItemEventListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/listener/NodeConfigListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/packet/PubSub.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/packet/PubSubNamespace.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/packet/SyncPacketSend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/AffiliationProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/AffiliationsProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/ConfigEventProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/EventProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/FormNodeProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/ItemProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/ItemsProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/PubSubProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/RetractEventProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/SimpleNodeProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/SubscriptionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/provider/SubscriptionsProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/util/NodeUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/pubsub/util/XmlUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/search/SimpleUserSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/search/UserSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/search/UserSearchManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/MetaData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/QueueUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/WorkgroupInvitation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/WorkgroupInvitationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/Agent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/AgentRoster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/AgentRosterListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/AgentSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/InvitationRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/Offer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/OfferConfirmation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/OfferConfirmationListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/OfferContent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/OfferListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/QueueUsersListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/RevokedOffer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/TranscriptManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/TranscriptSearchManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/TransferRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/UserRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/agent/WorkgroupQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/forms/WorkgroupForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/history/AgentChatHistory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/history/AgentChatSession.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/history/ChatMetadata.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/macros/Macro.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/macros/MacroGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/macros/Macros.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/ext/notes/ChatNotes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/AgentInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/AgentStatus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/AgentStatusRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/AgentWorkgroups.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/DepartQueuePacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/MetaDataProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/MonitorPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/OccupantsInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/OfferRequestProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/OfferRevokeProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/QueueDetails.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/QueueOverview.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/QueueUpdate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/RoomInvitation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/RoomTransfer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/SessionID.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/Transcript.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/TranscriptProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/TranscriptSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/Transcripts.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/TranscriptsProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/UserID.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/packet/WorkgroupInformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/ChatSetting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/ChatSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/GenericSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/OfflineSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/SearchSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/SoundSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/settings/WorkgroupProperties.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/user/QueueListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/user/Workgroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/util/ListenerEventDispatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/util/MetaDataUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/jivesoftware/smackx/workgroup/util/ModelUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/smackx-debug.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/MessageManager.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/src.xml" afterPath="$PROJECT_DIR$/.idea/libraries/src.xml" />
+    <list default="true" id="39cd1785-c87d-4cba-a098-df684e31f463" name="Default" comment="crapkilling&#10;updated to newest smack version with maven&#10;removing muc-stuf for convenience">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TeamSpeak-3-Java-API/teamspeak3-api.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ts3api.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/AdminManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/AdminUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/ChannelManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3BotCore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3Component.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/UserManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/listener/TS3ChatListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/chat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts3admin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ts3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XmppBotCore.properties" afterPath="$PROJECT_DIR$/XmppBotCore.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminbot.iml" afterPath="$PROJECT_DIR$/adminbot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/adminbot.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/adminbot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/core.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/core.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/help.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/help.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/status.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/status.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/RosterManager.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/RosterManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppRosterListener.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppRosterListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/PresenceManager.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/PresenceManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/startup.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/startup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/tools/SingletonHelper.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/tools/SingletonHelper.java" />
     </list>
     <ignored path="adminbot.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/../TeamSpeak-3-Java-API/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -476,7 +85,6 @@
     </breakpoint_any>
     <breakpoint_rules converted="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="adminbot" />
   </component>
@@ -485,48 +93,122 @@
       <file leaf-file-name="XmppBotCore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractXMPPConnection.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/AbstractXMPPConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4050">
-              <caret line="366" column="47" lean-forward="false" selection-start-line="366" selection-start-column="47" selection-end-line="366" selection-end-column="47" />
+            <state relative-caret-position="606">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.properties">
+      <file leaf-file-name="BotErrorHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/handler/BotErrorHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IncomingMessageManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmppChatCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmppComponent.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java">
+      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmppCommandCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppCommandCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminbot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/adminbot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PresenceManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/PresenceManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmppUserManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/XmppUserManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmppRosterListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppRosterListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>register</find>
+      <find>.type</find>
+      <find>type</find>
+      <find>nickname</find>
+      <find>setnickname</find>
+      <find>Channels</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -550,22 +232,41 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/login.properties" />
-        <option value="$PROJECT_DIR$/XmppBotCore.properties" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/RosterManager.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppRosterListener.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java" />
-        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/core.java" />
-        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/help.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/muc.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/status.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppChatManagerListener.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/MessageManager.java" />
-        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java" />
-        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/PresenceManager.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucLogger.java" />
-        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java" />
         <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/tools/SingletonHelper.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/startup.java" />
+        <option value="$PROJECT_DIR$/ts3.properties" />
+        <option value="$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/commands/Command.java" />
+        <option value="$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/commands/CUse.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/User.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Channel.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/ChannelManager.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3Component.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/adminbot.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/AdminUser.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/listener/TS3ChatListener.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts.java" />
+        <option value="$PROJECT_DIR$/XmppBotCore.properties" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3BotCore.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/chat.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts3.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/help.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/core.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/AdminManager.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts3admin.java" />
+        <option value="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java" />
       </list>
     </option>
   </component>
@@ -576,17 +277,48 @@
     <exe-path />
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="dedicatedModuleDir" value="$PROJECT_DIR$/../TeamSpeak-3-Java-API" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="full" />
+      </list>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="30" />
-    <option name="width" value="1914" />
-    <option name="height" value="1048" />
+    <option name="width" value="1920" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -606,49 +338,201 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adminbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adminbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ts3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ts3" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
+              <item name="ChatCommands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="steven_tappert" type="462c0819:PsiDirectoryNode" />
+              <item name="adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSpeak-3-Java-API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSpeak-3-Java-API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSpeak-3-Java-API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSpeak-3-Java-API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSpeak-3-Java-API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="teamspeak3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamSpeak-3-Java-API" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TeamSpeak-3-Java-API" />
     <property name="project.structure.side.proportion" value="0.18505748" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="js-jscs-package" value="/usr/lib/node_modules/jscs" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.steven_tappert.adminbot.components.xmpp.ChatCommands" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -666,6 +550,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Server">
+    <configuration name="Server" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="de.steven_tappert.adminbot.startup" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="adminbot" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -673,7 +571,6 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -688,7 +585,22 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -709,7 +621,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -717,29 +628,313 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
-    <configuration default="false" name="Server" type="Application" factoryName="Application">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="de.steven_tappert.adminbot.startup" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="adminbot" />
       <envs />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Server" />
-    </list>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -775,62 +970,85 @@
       <workItem from="1370028323605" duration="601000" />
       <workItem from="1376765987721" duration="25000" />
       <workItem from="1505352727274" duration="4843000" />
-      <workItem from="1505358164524" duration="99000" />
+      <workItem from="1505358164524" duration="1604000" />
+      <workItem from="1505362381516" duration="21960000" />
     </task>
+    <task id="LOCAL-00001" summary="crapkilling&#10;updated to newest smack version with maven&#10;removing muc-stuf for convenience">
+      <created>1505358379014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505358379014</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed message-type via outgoingListener">
+      <created>1505359622225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1505359622225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8554000" />
+    <option name="totallyTimeSpent" value="32019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1914" height="1048" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34632036" sideWeight="0.50213903" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34702703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26190478" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2054721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20962566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49786097" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3809524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59790576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="crapkilling&#10;updated to newest smack version with maven&#10;removing muc-stuf for convenience" />
+    <MESSAGE value="fixed message-type via outgoingListener" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed message-type via outgoingListener" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="13" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -838,287 +1056,206 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppCommandCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/tools/SingletonHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucActionInterface.java" />
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucAction.java" />
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppCommandCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/adminbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmpp_core">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.jivesoftware.smack.ConnectionConfiguration">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.jivesoftware.smack.ConnectionConfiguration</OriginalElement>
-          <nodes>
-            <node x="" y="">org.jivesoftware.smack.ConnectionConfiguration</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="103.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XmppBotCore.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram//Users/steven/work/adminbot/lib">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID />
-          <OriginalElement>$PROJECT_DIR$/lib</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="646.0" y="450.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.jivesoftware.smack">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.jivesoftware.smack</OriginalElement>
-          <nodes>
-            <node x="" y="">org.jivesoftware.smack.SmackException</node>
-            <node x="" y="">org.jivesoftware.smack.compress</node>
-            <node x="" y="">org.jivesoftware.smack.UnparseableStanza</node>
-            <node x="" y="">org.jivesoftware.smack.SmackInitialization</node>
-            <node x="" y="">org.jivesoftware.smack.util</node>
-            <node x="" y="">org.jivesoftware.smack.iqrequest</node>
-            <node x="" y="">org.jivesoftware.smack.filter</node>
-            <node x="" y="">org.jivesoftware.smack.extensions</node>
-            <node x="" y="">org.jivesoftware.smack.ReconnectionManager</node>
-            <node x="" y="">org.jivesoftware.smack.roster</node>
-            <node x="" y="">org.jivesoftware.smack.compression</node>
-            <node x="" y="">org.jivesoftware.smack.Manager</node>
-            <node x="" y="">org.jivesoftware.smack.SmackConfiguration</node>
-            <node x="" y="">org.jivesoftware.smack.packet</node>
-            <node x="" y="">org.jivesoftware.smack.parsing</node>
-            <node x="" y="">org.jivesoftware.smack.ConnectionCreationListener</node>
-            <node x="" y="">org.jivesoftware.smack.AbstractConnectionClosedListener</node>
-            <node x="" y="">org.jivesoftware.smack.ConnectionConfiguration</node>
-            <node x="" y="">org.jivesoftware.smack.proxy</node>
-            <node x="" y="">org.jivesoftware.smack.initializer</node>
-            <node x="" y="">org.jivesoftware.smack.java7</node>
-            <node x="" y="">org.jivesoftware.smack.AbstractConnectionListener</node>
-            <node x="" y="">org.jivesoftware.smack.SynchronizationPoint</node>
-            <node x="" y="">org.jivesoftware.smack.StanzaCollector</node>
-            <node x="" y="">org.jivesoftware.smack.XMPPConnection</node>
-            <node x="" y="">org.jivesoftware.smack.ExceptionCallback</node>
-            <node x="" y="">org.jivesoftware.smack.im</node>
-            <node x="" y="">org.jivesoftware.smack.sasl</node>
-            <node x="" y="">org.jivesoftware.smack.chat</node>
-            <node x="" y="">org.jivesoftware.smack.MessageListener</node>
-            <node x="" y="">org.jivesoftware.smack.ConnectionListener</node>
-            <node x="" y="">org.jivesoftware.smack.PresenceListener</node>
-            <node x="" y="">org.jivesoftware.smack.provider</node>
-            <node x="" y="">org.jivesoftware.smack.PacketListener</node>
-            <node x="" y="">org.jivesoftware.smack.SASLAuthentication</node>
-            <node x="" y="">org.jivesoftware.smack.AbstractXMPPConnection</node>
-            <node x="" y="">org.jivesoftware.smack.XMPPConnectionRegistry</node>
-            <node x="" y="">org.jivesoftware.smack.chat2</node>
-            <node x="" y="">org.jivesoftware.smack.debugger</node>
-            <node x="" y="">org.jivesoftware.smack.XMPPException</node>
-            <node x="" y="">org.jivesoftware.smack.StanzaListener</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="355.0" y="560.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.0-sources.jar!/org/jivesoftware/smack/ConnectionConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/ConnectionConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="551" column="0" lean-forward="true" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/RosterManager.java">
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/QueryIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppRosterListener.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/org/slf4j/LoggerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/resources/simplelogger.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-extensions-4.2.1-sources.jar!/org/jivesoftware/smackx/chatstates/ChatStateManager.java">
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/SocketWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/MessageListener.java">
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/TS3Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-extensions-4.2.1-sources.jar!/org/jivesoftware/smack/chat2/IncomingChatMessageListener.java">
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/api/CommandFuture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="386">
+          <caret line="398" column="0" lean-forward="true" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppUser.java">
+    <entry file="file://$PROJECT_DIR$/ts3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/core.java">
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/commands/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding>
+            <element signature="e#2013#2014#0" expanded="false" />
+            <element signature="e#2042#2043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/commands/CUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/api/wrapper/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding>
+            <element signature="e#1489#1490#0" expanded="false" />
+            <element signature="e#1506#1507#0" expanded="false" />
+            <element signature="e#1805#1806#0" expanded="false" />
+            <element signature="e#1845#1846#0" expanded="false" />
+            <element signature="e#2930#2931#0" expanded="false" />
+            <element signature="e#2958#2959#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/api/wrapper/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#2061#2062#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/api/ChannelProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/api/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/api/wrapper/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java/com/github/theholywaffle/teamspeak3/TS3Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="3857" column="19" lean-forward="false" selection-start-line="3857" selection-start-column="19" selection-end-line="3857" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/AbstractXMPPConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="1232" column="0" lean-forward="false" selection-start-line="1232" selection-start-column="0" selection-end-line="1232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/BotComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/startup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jxmpp-jid-0.5.0-sources.jar!/org/jxmpp/jid/impl/JidCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="195" column="37" lean-forward="false" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jxmpp-jid-0.5.0-sources.jar!/org/jxmpp/jid/EntityBareJid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/AdminUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1126,145 +1263,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/help.java">
+    <entry file="jar://$PROJECT_DIR$/lib/jxmpp-jid-0.5.0-sources.jar!/org/jxmpp/jid/Jid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/XMPPConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+        <state relative-caret-position="202">
+          <caret line="177" column="7" lean-forward="true" selection-start-line="177" selection-start-column="7" selection-end-line="177" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/troll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/smack-extensions-4.2.1-sources.jar!/org/jivesoftware/smack/chat2/ChatManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="214" column="0" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppChatManagerListener.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/StanzaListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/PacketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/PresenceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/mucActions/mucLogger.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/smack-extensions-4.2.1-sources.jar!/org/jivesoftware/smackx/muc/MultiUserChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="152" column="4" lean-forward="false" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/XmppMucManager.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/packet/Stanza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/packet/Packet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/muc.java" />
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="67">
+          <caret line="270" column="0" lean-forward="true" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/smack-core-4.2.1-sources.jar!/org/jivesoftware/smack/AbstractXMPPConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/ChannelManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4050">
-          <caret line="366" column="47" lean-forward="false" selection-start-line="366" selection-start-column="47" selection-end-line="366" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1505371621139" expanded="false" signature="491:502" ph=" { " />
+            <marker date="1505371621139" expanded="false" signature="527:533" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="548">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XmppBotCore.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3BotCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#8946#8947#0" expanded="true" />
+            <element signature="e#8989#8990#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/listener/TS3ChatListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/AdminManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/ts3admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/listener/XmppRosterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/PresenceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/XmppUserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppBotCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/handler/BotErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/adminbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/XmppChatCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/XmppCommandCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/manager/IncomingMessageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,7 +1532,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.18505748" />
               </list>
             </option>
           </splitter-proportions>
@@ -1313,7 +1544,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.18505748" />
               </list>
             </option>
           </splitter-proportions>
@@ -1326,7 +1557,6 @@
             <option name="proportions">
               <list>
                 <option value="0.18505748" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1346,7 +1576,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.igniterealtime.smack:smack-tcp:4.2.1</last-edited>
+          <last-edited>src</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

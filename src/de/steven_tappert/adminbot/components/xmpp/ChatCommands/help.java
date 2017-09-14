@@ -37,9 +37,8 @@ public class help extends XmppChatCmd {
                 chat.send(msg);
             } else if (args.length == 2) {
                 chat.send(
-                        XmppCommandCache.
-                        getCommand(
-                            args[2].replaceFirst("^!","").trim()
+                        XmppCommandCache.getCommand(
+                                args[1].replaceFirst("^!", "").trim()
                         ).getCommandSyntax()
                 );
             }
@@ -54,7 +53,7 @@ public class help extends XmppChatCmd {
     }
 
     public String getHelpLevel(Integer level) {
-        String out = "";
+        StringBuilder out = new StringBuilder();
         HashSet<String> cmds = new HashSet<String>();
 
         for (Map.Entry<String, Integer> entry : XmppCommandCache.getCommandsWithLevels().entrySet()) {
@@ -65,17 +64,23 @@ public class help extends XmppChatCmd {
         Logger.log(this, "getHelpLevel", "debug", "CMD Size: " + cmds.size());
 
         if (cmds.size() > 0)
-            out += "Level: " + level + "\n";
+            out.append("Level: ").append(level).append("\n");
 
         for (String entry : cmds) {
-            out += entry + ", ";
+            out.append("- ")
+                    .append(entry)
+                    .append(" (").append(XmppCommandCache.getCommands().get(entry).getCommandDescription()).append(")")
+                    .append("\n");
         }
 
-        out += "\n";
+        if (out.length() > 2)
+            out.substring(0, out.length() - 2);
+
+        out.append("\n");
         cmds.clear();
 
         if (out.length() > 2)
-            return out.substring(0, out.length() - 2);
+            return out.toString();
         else
             return "";
     }

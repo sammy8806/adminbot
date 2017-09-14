@@ -1,5 +1,7 @@
 package de.steven_tappert.adminbot;
 
+import de.steven_tappert.adminbot.components.AdminManager;
+import de.steven_tappert.adminbot.components.AdminUser;
 import de.steven_tappert.tools.Logger;
 
 import java.lang.reflect.Constructor;
@@ -17,10 +19,13 @@ public class adminbot {
 
     private ClassLoader classLoader = adminbot.class.getClassLoader();
 
+    public AdminManager adminManager;
+
     public adminbot() {
         // TODO: Streamumlenkungen + Verabeitung (LogStream)
         //    System.setErr(new BotErrorHandler(new LogStream(), true));
         //    System.setOut(new BotErrorHandler(new LogStream(), true));
+        adminManager = new AdminManager();
     }
 
     public void loadComponent(BotComponent component) {

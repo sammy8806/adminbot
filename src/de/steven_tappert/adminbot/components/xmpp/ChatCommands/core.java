@@ -15,6 +15,7 @@ public class core extends XmppChatCmd {
 
     public core() {
         setCommandName("core");
+        setCommandDescription("System Console");
         setCommandSyntax("!core [load|unload|unloadall|reload|list|shutdown] ([command])");
         setCommandAuthLevel(4);
     }
