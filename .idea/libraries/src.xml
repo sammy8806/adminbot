@@ -2,7 +2,6 @@
   <library name="src">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/src/xpp3-1.1.4c.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/smackx-debug.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/yamlbeans-1.06.jar!/" />
     </CLASSES>
     <JAVADOC />

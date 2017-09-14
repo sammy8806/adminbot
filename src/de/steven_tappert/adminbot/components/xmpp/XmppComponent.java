@@ -5,17 +5,19 @@ import de.steven_tappert.adminbot.components.xmpp.manager.ConfigManager;
 import de.steven_tappert.tools.SingletonHelper;
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
+import org.jxmpp.stringprep.XmppStringprepException;
 
 import java.util.Properties;
 
 public class XmppComponent implements BotComponent {
 
-    private String XmppServer = "chat.eu.lol.riotgames.com";
+    private String XmppServer = "";
     private int XmppPort;
-    private String XmppUser = "sammy9S3";
-    private String XmppUsername = "sammy9S3";
-    private String XmppPassword = "AIR_";
-    private String XmppServiceName = "pvp.net";
+    private String XmppResource = "JavaBot";
+    private String XmppUsername = "";
+    private String XmppPassword = "";
+    private String XmppServiceName = "";
 
     private XmppBotCore core;
 
@@ -28,8 +30,8 @@ public class XmppComponent implements BotComponent {
         Properties properties = configManager.getProperties();
 
         XmppServer = properties.getProperty("server");
-        XmppPort = Integer.parseInt(properties.getProperty("port", "5223"));
-        XmppUser = properties.getProperty("username");
+        XmppPort = Integer.parseInt(properties.getProperty("port", "5222"));
+        XmppResource = properties.getProperty("username");
         XmppUsername = properties.getProperty("showName");
         XmppPassword = properties.getProperty("password");
         XmppServiceName = properties.getProperty("resource");
@@ -38,17 +40,25 @@ public class XmppComponent implements BotComponent {
 
         // Logger.log(this, "loadComponent", "debug",);
 
-        ConnectionConfiguration conf = new ConnectionConfiguration(XmppServer, XmppPort, XmppServiceName);
+        //  (XmppServer, XmppPort, XmppServiceName)
+        try {
+            XMPPTCPConnectionConfiguration conf = XMPPTCPConnectionConfiguration.builder()
+                    .setUsernameAndPassword(XmppUsername, XmppPassword)
+                    .setXmppDomain(XmppServiceName)
+                    .setHost(XmppServer)
+                    .setPort(XmppPort)
+                    .setResource(XmppResource)
+                    .setSecurityMode(XMPPTCPConnectionConfiguration.SecurityMode.required)
+                    .setDebuggerEnabled(false) // GUI-Debugger
+                    .build();
 
-        // Folgende Zeilen regeln die Loginmethode (SSL-Legacy, SASL)
-        conf.setSecurityMode(ConnectionConfiguration.SecurityMode.legacy);
-        conf.setSASLAuthenticationEnabled(true);
-        conf.setReconnectionAllowed(true);
+            return startComponent(conf);
 
-        conf.setDebuggerEnabled(false);
-        XMPPConnection.DEBUG_ENABLED = false;
+        } catch (XmppStringprepException e) {
+            e.printStackTrace();
+        }
 
-        return startComponent(conf);
+        return false;
     }
 
     public boolean unloadComponent() {
@@ -56,12 +66,12 @@ public class XmppComponent implements BotComponent {
         return true;
     }
 
-    public boolean startComponent(ConnectionConfiguration conf) {
+    public boolean startComponent(XMPPTCPConnectionConfiguration conf) {
         try {
             SingletonHelper.registerInstance(new XmppBotCore(conf));
 
             core = (XmppBotCore) SingletonHelper.getInstance("XmppBotCore");
-            core.setXmppUser(XmppUser);
+            core.setXmppUser(XmppResource);
             core.setXmppPassword(XmppPassword);
             core.setXmppUsername(XmppUsername);
 

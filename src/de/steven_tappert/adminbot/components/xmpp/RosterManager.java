@@ -1,21 +1,20 @@
 package de.steven_tappert.adminbot.components.xmpp;
 
-import org.jivesoftware.smack.Roster;
-import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.roster.Roster;
+import org.jivesoftware.smack.tcp.XMPPTCPConnection;
 
 public class RosterManager {
 
-    XMPPConnection connectionn;
-
+    private XMPPTCPConnection connection;
     private Roster roster;
 
-    public RosterManager(XMPPConnection connectionn) {
-        this.connectionn = connectionn;
+    public RosterManager(XMPPTCPConnection connectionn) {
+        this.connection = connectionn;
         loadRoster();
     }
 
     public void loadRoster() {
-        roster =  connectionn.getRoster();
+        roster = Roster.getInstanceFor(connection);
         roster.getEntries();
     }
 

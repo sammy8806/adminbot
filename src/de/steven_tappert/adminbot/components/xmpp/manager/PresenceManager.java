@@ -1,17 +1,15 @@
 package de.steven_tappert.adminbot.components.xmpp.manager;
 
 import de.steven_tappert.adminbot.components.xmpp.XmppUser;
-import org.jivesoftware.smack.PacketListener;
-import org.jivesoftware.smack.packet.Packet;
+import org.jivesoftware.smack.StanzaListener;
 import org.jivesoftware.smack.packet.Presence;
+import org.jivesoftware.smack.packet.Stanza;
 
-public class PresenceManager implements PacketListener {
-
+public class PresenceManager implements StanzaListener {
 
     @Override
-    public void processPacket(Packet packet) {
-        String pvp = packet.getFrom().replaceAll("/.*", "");
-        String sender = XmppUser.getNameFromJID(packet.getFrom());
+    public void processStanza(Stanza packet) {
+        String sender = packet.getFrom().toString();
 
         Presence presence = (Presence) packet;
 

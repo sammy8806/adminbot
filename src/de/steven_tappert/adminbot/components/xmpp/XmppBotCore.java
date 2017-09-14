@@ -1,23 +1,23 @@
 package de.steven_tappert.adminbot.components.xmpp;
 
-import de.steven_tappert.adminbot.components.xmpp.listener.XmppChatManagerListener;
 import de.steven_tappert.adminbot.components.xmpp.listener.XmppRosterListener;
 import de.steven_tappert.adminbot.components.xmpp.manager.ConfigManager;
-import de.steven_tappert.adminbot.components.xmpp.manager.MessageManager;
+import de.steven_tappert.adminbot.components.xmpp.manager.IncomingMessageManager;
 import de.steven_tappert.adminbot.components.xmpp.manager.PresenceManager;
-import de.steven_tappert.adminbot.components.xmpp.manager.XmppMucManager;
 import de.steven_tappert.tools.Logger;
 import de.steven_tappert.tools.SingletonHelper;
-import org.jivesoftware.smack.ConnectionConfiguration;
-import org.jivesoftware.smack.Roster;
-import org.jivesoftware.smack.XMPPConnection;
-import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.*;
+import org.jivesoftware.smack.chat2.ChatManager;
+import org.jivesoftware.smack.roster.Roster;
+import org.jivesoftware.smack.tcp.XMPPTCPConnection;
+import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
 
+import java.io.IOException;
 import java.util.Properties;
 
 import static de.steven_tappert.tools.Logger.log;
 
-public class XmppBotCore extends XMPPConnection {
+public class XmppBotCore extends XMPPTCPConnection {
 
     private String xmppPassword;
     private String xmppUser;
@@ -30,17 +30,17 @@ public class XmppBotCore extends XMPPConnection {
     private RosterManager rM;
 
     private PresenceManager pM;
-    private MessageManager mM;
+    private IncomingMessageManager mM;
     private Integer watchdogTimer = 7 * 1000;
 
     private boolean watchdogEnable = true;
     private boolean watchdogReconnect = true;
     private Thread watchdog;
-    public static XMPPConnection botXmppCore;
+    public static XMPPTCPConnection botXmppCore;
 
     private boolean shouldBeConnected = true;
 
-    public XmppBotCore(ConnectionConfiguration conf) {
+    public XmppBotCore(XMPPTCPConnectionConfiguration conf) {
         super(conf);
 
         if (watchdogEnable) {
@@ -78,12 +78,14 @@ public class XmppBotCore extends XMPPConnection {
 
         // Register some Handlers
         rM.getRoster().addRosterListener(new XmppRosterListener());
-        getChatManager().addChatListener(new XmppChatManagerListener());
+        ChatManager chatManager = ChatManager.getInstanceFor(botXmppCore);
+        chatManager.addIncomingListener(new IncomingMessageManager());
     }
 
     public XMPPConnection getInstance() {
         return this;
     }
+
     public String getXmppUsername() {
         return xmppUsername;
     }
@@ -92,14 +94,16 @@ public class XmppBotCore extends XMPPConnection {
         this.xmppUsername = xmppUsername;
     }
 
-    public void connect() {
+    public AbstractXMPPConnection connect() {
         try {
             if (!isConnected()) {
                 log(this, "connect", "info", "Connect");
                 try {
-                super.connect();
+                    super.connect();
                 } catch (NullPointerException npe) {
                     System.exit(1);
+                } catch (InterruptedException | IOException | SmackException e) {
+                    e.printStackTrace();
                 }
             }
 
@@ -121,7 +125,7 @@ public class XmppBotCore extends XMPPConnection {
 
             if (!isAuthenticated()) {
                 log(this, "connect", "info", "Login");
-                super.login(xmppUser, xmppPassword, "xiff");
+                super.login(xmppUser, xmppPassword);
             }
 
             if (!isAuthenticated()) {
@@ -150,9 +154,13 @@ public class XmppBotCore extends XMPPConnection {
             }
             log(this, "connect", "error", "Try to reconnect ...");
             connect();
+        } catch (InterruptedException | IOException | SmackException e) {
+            e.printStackTrace();
         }
 
         afterConnect();
+
+        return this;
     }
 
     public void afterConnect() {
@@ -161,7 +169,7 @@ public class XmppBotCore extends XMPPConnection {
 
         String[] autoloadCommands = properties.getProperty("autoloadCommands").split(",");
 
-        for(String cmd : autoloadCommands) {
+        for (String cmd : autoloadCommands) {
             try {
                 XmppCommandCache.getCommand(cmd.trim());
             } catch (ClassNotFoundException e) {
@@ -170,11 +178,11 @@ public class XmppBotCore extends XMPPConnection {
         }
 
         String subscriptionMode = properties.getProperty("subscriptionMode");
-        if(subscriptionMode.equals("accept_all"))
+        if (subscriptionMode.equals("accept_all"))
             rM.getRoster().setSubscriptionMode(Roster.SubscriptionMode.accept_all);
-        else if(subscriptionMode.equals("manual"))
+        else if (subscriptionMode.equals("manual"))
             rM.getRoster().setSubscriptionMode(Roster.SubscriptionMode.manual);
-        else if(subscriptionMode.equals("reject_all"))
+        else if (subscriptionMode.equals("reject_all"))
             rM.getRoster().setSubscriptionMode(Roster.SubscriptionMode.reject_all);
 
     }
@@ -199,7 +207,7 @@ public class XmppBotCore extends XMPPConnection {
 
     private void unloadAllCommands() {
         XmppCommandCache.reloadAllCommands();
-        ((XmppMucManager) SingletonHelper.getInstance("xmppmucmanager")).partAllRooms();
+        // ((XmppMucManager) SingletonHelper.getInstance("xmppmucmanager")).partAllRooms();
     }
 
 

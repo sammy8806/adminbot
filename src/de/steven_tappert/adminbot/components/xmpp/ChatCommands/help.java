@@ -2,9 +2,10 @@ package de.steven_tappert.adminbot.components.xmpp.ChatCommands;
 
 import de.steven_tappert.adminbot.components.xmpp.XmppCommandCache;
 import de.steven_tappert.tools.Logger;
-import org.jivesoftware.smack.Chat;
+import org.jivesoftware.smack.SmackException;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.packet.Message;
 
 import java.util.HashSet;
@@ -33,19 +34,19 @@ public class help extends XmppChatCmd {
                 msg += getHelpLevel(1);
                 msg += getHelpLevel(0);
                 Logger.log(this, "runCommand", "debug", "MSG: " + msg);
-                chat.sendMessage(msg);
+                chat.send(msg);
             } else if (args.length == 2) {
-                chat.sendMessage(
+                chat.send(
                         XmppCommandCache.
                         getCommand(
                             args[2].replaceFirst("^!","").trim()
                         ).getCommandSyntax()
                 );
             }
-        } catch (XMPPException e) {
+        } catch (SmackException.NotConnectedException e) {
             e.printStackTrace();
             Logger.log(this, "runCommand", "error", e.getMessage());
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException | InterruptedException e) {
             e.printStackTrace();
         }
 

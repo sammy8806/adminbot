@@ -1,7 +1,8 @@
 package de.steven_tappert.adminbot.components.xmpp.ChatCommands;
 
-import org.jivesoftware.smack.Chat;
+import org.jivesoftware.smack.SmackException;
 import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.packet.Message;
 import org.jivesoftware.smack.packet.Presence;
 
@@ -25,6 +26,10 @@ public class status extends XmppChatCmd {
         status.setMode(Presence.Mode.chat);
         status.setStatus("<body><gameStatus>outOfGame</gameStatus><level>42</level><wins>1337</wins><statusMsg>" + s + "</statusMsg><profileIcon>28</profileIcon></body>");
 
-        conn.sendPacket(status);
+        try {
+            conn.sendStanza(status);
+        } catch (InterruptedException | SmackException.NotConnectedException e) {
+            e.printStackTrace();
+        }
     }
 }

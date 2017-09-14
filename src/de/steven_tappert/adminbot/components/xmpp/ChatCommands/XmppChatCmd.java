@@ -2,9 +2,9 @@ package de.steven_tappert.adminbot.components.xmpp.ChatCommands;
 
 import de.steven_tappert.adminbot.components.xmpp.XmppCommandCache;
 import de.steven_tappert.adminbot.components.xmpp.XmppUser;
-import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.packet.Message;
 
 import java.util.Collection;
@@ -26,9 +26,7 @@ public class XmppChatCmd implements XmppChatCommand {
     }
 
     public void runCommand(XMPPConnection conn, Chat chat, Message message) throws XMPPException {
-
-
-        if(!XmppUser.getNameFromJID(message.getFrom()).equals("sammy9600"))
+        if(!message.getFrom().getDomain().toString().equals("dark-it.net"))
             return;
     }
 

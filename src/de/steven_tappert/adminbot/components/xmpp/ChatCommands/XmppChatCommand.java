@@ -1,8 +1,8 @@
 package de.steven_tappert.adminbot.components.xmpp.ChatCommands;
 
-import org.jivesoftware.smack.Chat;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.packet.Message;
 
 import java.util.Collection;
