@@ -1,4 +1,3 @@
 out/
 *.log
-login.properties
-muc.properties
+*.properties
