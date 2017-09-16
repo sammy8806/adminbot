@@ -38,14 +38,14 @@ public class TS3ChatListener extends TS3EventAdapter {
                         log(this, "onTextMessage", "Debug", "Skipping Admin without JID");
                         return;
                     }
-                    if (adminUser.ts3uid.equalsIgnoreCase(e.getInvokerUniqueId())) {
+                    if (adminUser.ts3uid.contains(e.getInvokerUniqueId())) {
                         log(this, "onTextMessage", "Debug", "Not sending the message back to sender");
                         return;
                     }
 
-                    Chat chat = core.chatManager.chatWith(adminUser.jid);
+                    Chat chat = core.chatManager.chatWith(adminUser.getBareJid());
                     chat.send(core.getUserManager().getUser(e.getInvokerId()).getNickname() + ": " + e.getMessage());
-                    log(this, "onTextMessage", "Debug", "Sending message to " + adminUser.jid.toString());
+                    log(this, "onTextMessage", "Debug", "Sending message to " + adminUser.jid);
                 } catch (SmackException.NotConnectedException | InterruptedException e1) {
                     e1.printStackTrace();
                 }

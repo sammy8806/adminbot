@@ -1,17 +1,22 @@
 package de.steven_tappert.adminbot;
 
+import com.fasterxml.jackson.databind.MapperFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import de.steven_tappert.adminbot.components.AdminManager;
 import de.steven_tappert.adminbot.components.AdminUser;
 import de.steven_tappert.tools.Logger;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 public class adminbot {
 
     private final String author = "Steven Tappert";
-    private final String version = "Steven Tappert";
+    private final String version = "v0.5";
 
     private boolean DEBUG = true;
 
@@ -26,6 +31,7 @@ public class adminbot {
         //    System.setErr(new BotErrorHandler(new LogStream(), true));
         //    System.setOut(new BotErrorHandler(new LogStream(), true));
         adminManager = new AdminManager();
+        adminManager.loadUsers();
     }
 
     public void loadComponent(BotComponent component) {
@@ -47,8 +53,8 @@ public class adminbot {
             BotComponent instance = (BotComponent) cls.newInstance();
             instance.loadComponent();
 
-            Constructor dummy = cls.getConstructor(null);
-            dummy.newInstance(null);
+            Constructor dummy = cls.getConstructor((Class<BotComponent>) null);
+            dummy.newInstance((Object) null);
 
             components.put(componentName, instance);
         } catch (ClassNotFoundException e) {

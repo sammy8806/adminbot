@@ -46,9 +46,9 @@ public class ts3admin extends XmppChatCmd {
                 String uid = args[2];
                 ts3BotCore.addMasterUser(uid);
                 AdminUser admin = new AdminUser();
-                admin.ts3uid = uid;
+                admin.ts3uid.add(uid);
                 if (args.length > 3) {
-                    admin.jid = JidCreate.bareFrom(args[3]).asEntityBareJidIfPossible();
+                    admin.jid = args[3];
                 }
                 if (args.length > 4) {
                     admin.name = args[4];
@@ -67,7 +67,7 @@ public class ts3admin extends XmppChatCmd {
                 adminbot.adminManager.getAdmins().forEach(adminUser -> {
                     buf.append(adminUser.name).append(": \n");
                     buf.append("TS3: ").append(adminUser.ts3uid).append("\n");
-                    buf.append("Jid: ").append(adminUser.jid.toString()).append("\n");
+                    buf.append("JID: ").append(adminUser.jid).append("\n");
                 });
                 chat.send(buf.toString().trim());
             } else if (args[1].equalsIgnoreCase("goChan")) {
@@ -76,7 +76,7 @@ public class ts3admin extends XmppChatCmd {
                 sendSyntax(chat);
         } catch (ArrayIndexOutOfBoundsException e) {
             sendSyntax(chat);
-        } catch (XmppStringprepException | SmackException.NotConnectedException | InterruptedException e) {
+        } catch (SmackException.NotConnectedException | InterruptedException e) {
             e.printStackTrace();
         }
     }
