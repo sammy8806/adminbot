@@ -41,25 +41,12 @@ public class Ts3BotCore {
     private String clientName;
     int clientId;
 
-    private List<String> masterUsers;
-
     Ts3BotCore(TS3Config config) {
         this.config = config;
         this.userManager = new UserManager();
         this.channelManager = new ChannelManager();
-        this.masterUsers = new ArrayList<>();
         this.chatManager = ChatManager.getInstanceFor((XmppBotCore) SingletonHelper.getInstance("XmppBotCore"));
         this.adminManager = ((adminbot) SingletonHelper.getInstance("adminbot")).adminManager;
-    }
-
-    public void addMasterUser(String uid) {
-        masterUsers.add(uid);
-        scanMasterUsers();
-    }
-
-    public void removeMasterUser(String uid) {
-        masterUsers.remove(uid);
-        scanMasterUsers();
     }
 
     void setUsername(String username) {
@@ -97,7 +84,7 @@ public class Ts3BotCore {
 
         scanMasterUsers();
 
-        api.sendChannelMessage("At your service master!");
+        // api.sendChannelMessage("At your service master!");
 
         api.addTS3Listeners(new TS3ChatListener(this));
         api.addTS3Listeners(new TS3EventAdapter() {
@@ -149,12 +136,12 @@ public class Ts3BotCore {
 
     private void scanMasterUsers() {
         List<Integer> masterClients = new ArrayList<>();
-        if (masterUsers == null || masterUsers.size() < 1) {
+        if (adminManager.users.size() < 1) {
             log(this, "connect", "info", "No master users defined ... skipping registering");
         } else {
             userManager.getUsers().forEach((integer, client) -> {
                 try {
-                    if (masterUsers.contains(client.getUniqueIdentifier()) &&
+                    if (adminManager.getAdminByTs3uid(client.getUniqueIdentifier()).level > 0 &&
                             !client.getPlatform().equalsIgnoreCase("ServerQuery")) {
                         log(this, "connect", "info", "Found MasterClient for " + client.getNickname());
                         masterClients.add(client.getId());
