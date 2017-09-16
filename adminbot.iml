@@ -14,5 +14,6 @@
     <orderEntry type="library" name="org.igniterealtime.smack:smack-tcp:4.2.1" level="project" />
     <orderEntry type="library" name="src" level="project" />
     <orderEntry type="module" module-name="teamspeak3-api" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.8.1" level="project" />
   </component>
 </module>
