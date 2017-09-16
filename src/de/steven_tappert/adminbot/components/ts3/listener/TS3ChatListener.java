@@ -14,6 +14,9 @@ import org.jxmpp.jid.parts.Domainpart;
 import org.jxmpp.jid.parts.Localpart;
 import org.jxmpp.stringprep.XmppStringprepException;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import static de.steven_tappert.tools.Logger.log;
 
 public class TS3ChatListener extends TS3EventAdapter {
@@ -43,8 +46,20 @@ public class TS3ChatListener extends TS3EventAdapter {
                         return;
                     }
 
+                    List<String> bbTags = new LinkedList<>();
+                    bbTags.add("URL");
+                    bbTags.add("b");
+                    bbTags.add("i");
+                    bbTags.add("u");
+
+                    String msg = e.getMessage();
+                    for (String tag : bbTags) {
+                        msg = msg.replaceAll(String.format("\\[%s\\]", tag), "");
+                        msg = msg.replaceAll(String.format("\\[/%s\\]", tag), "");
+                    }
+
                     Chat chat = core.chatManager.chatWith(adminUser.getBareJid());
-                    chat.send(core.getUserManager().getUser(e.getInvokerId()).getNickname() + ": " + e.getMessage());
+                    chat.send(core.getUserManager().getUser(e.getInvokerId()).getNickname() + ": " + msg);
                     log(this, "onTextMessage", "Debug", "Sending message to " + adminUser.jid);
                 } catch (SmackException.NotConnectedException | InterruptedException e1) {
                     e1.printStackTrace();

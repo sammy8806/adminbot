@@ -25,11 +25,14 @@ public class AdminManager {
 
     public void addAdmin(AdminUser admin) {
         users.add(admin);
+        writeUsers();
     }
 
     public void removeAdmin(AdminUser admin) {
-        if (users.contains(admin))
+        if (users.contains(admin)) {
             users.remove(admin);
+            writeUsers();
+        }
     }
 
     public AdminUser getAdmin(Jid jid) {
