@@ -5,16 +5,12 @@ import de.steven_tappert.adminbot.components.xmpp.manager.ConfigManager;
 import de.steven_tappert.adminbot.components.xmpp.manager.IncomingMessageManager;
 import de.steven_tappert.adminbot.components.xmpp.manager.PresenceManager;
 import de.steven_tappert.tools.Logger;
-import de.steven_tappert.tools.SingletonHelper;
 import org.jivesoftware.smack.*;
-import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.chat2.ChatManager;
-import org.jivesoftware.smack.chat2.OutgoingChatMessageListener;
 import org.jivesoftware.smack.packet.Message;
 import org.jivesoftware.smack.roster.Roster;
 import org.jivesoftware.smack.tcp.XMPPTCPConnection;
 import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
-import org.jxmpp.jid.EntityBareJid;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -202,14 +198,14 @@ public class XmppBotCore extends XMPPTCPConnection {
         this.xmppUser = xmppUser;
     }
 
-    public void shutdown() {
-        log(this, "shutdown", "info", "XmppBotCore is shutting down!");
+    public void botShutdown() {
+        log(this, "botShutdown", "info", "XmppBotCore is shutting down!");
         shouldBeConnected = false;
         watchdogEnable = false;
         unloadAllCommands();
         disconnect();
         exit = true;
-        log(this, "shutdown", "info", "XmppBotCore shutted down!");
+        log(this, "botShutdown", "info", "XmppBotCore shutted down!");
     }
 
     private void unloadAllCommands() {
@@ -221,13 +217,13 @@ public class XmppBotCore extends XMPPTCPConnection {
     protected class XmppWatchdog implements Runnable {
         public void run() {
             while (watchdogEnable) {
-                if (shutdown) {
-                    shutdown();
-                    break;
-                }
-
                 try {
                     Thread.sleep(watchdogTimer);
+
+                    if (shutdown) {
+                        botShutdown();
+                        break;
+                    }
 
                     if (!isConnected()) {
                         Logger.log(this, "run", "error", "Watchdog Alert! Try to restart!");
@@ -237,6 +233,7 @@ public class XmppBotCore extends XMPPTCPConnection {
 
                 } catch (InterruptedException e) {
                     // Nothing
+                    e.printStackTrace();
                 }
             }
         }

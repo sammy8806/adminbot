@@ -3,8 +3,6 @@ package de.steven_tappert.adminbot.components.xmpp;
 import de.steven_tappert.adminbot.BotComponent;
 import de.steven_tappert.adminbot.components.xmpp.manager.ConfigManager;
 import de.steven_tappert.tools.SingletonHelper;
-import org.jivesoftware.smack.ConnectionConfiguration;
-import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
 import org.jxmpp.stringprep.XmppStringprepException;
 
@@ -62,7 +60,7 @@ public class XmppComponent implements BotComponent {
     }
 
     public boolean unloadComponent() {
-        core.shutdown();
+        core.botShutdown();
         return true;
     }
 
@@ -85,6 +83,3 @@ public class XmppComponent implements BotComponent {
         return false;
     }
 }
-
-
-

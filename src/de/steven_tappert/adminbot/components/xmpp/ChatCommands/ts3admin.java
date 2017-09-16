@@ -23,8 +23,8 @@ public class ts3admin extends XmppChatCmd {
     private adminbot adminbot = null;
 
     public ts3admin() {
-        setCommandName("ts3admin");
-        setCommandDescription("Get TS3 Admin Control");
+        setCommandName("admin");
+        setCommandDescription("Get Admin Controls");
         setCommandSyntax("!ts3admin [add|del|list|go] <uid|chan> [<jid>] [<name>]");
         setCommandAuthLevel(4);
     }
@@ -44,7 +44,6 @@ public class ts3admin extends XmppChatCmd {
         try {
             if (args[1].equalsIgnoreCase("add")) {
                 String uid = args[2];
-                ts3BotCore.addMasterUser(uid);
                 AdminUser admin = new AdminUser();
                 admin.ts3uid.add(uid);
                 if (args.length > 3) {
@@ -53,11 +52,13 @@ public class ts3admin extends XmppChatCmd {
                 if (args.length > 4) {
                     admin.name = args[4];
                 }
+                if (args.length > 5) {
+                    admin.level = Integer.valueOf(args[5]);
+                }
                 adminbot.adminManager.addAdmin(admin);
             } else if (args[1].equalsIgnoreCase("del")) {
                 String uid = args[2];
                 AdminUser admin = adminbot.adminManager.getAdminByTs3uid(uid);
-                ts3BotCore.removeMasterUser(uid);
                 adminbot.adminManager.removeAdmin(admin);
             } else if (args[1].equalsIgnoreCase("list")) {
                 StringBuilder buf = new StringBuilder();
