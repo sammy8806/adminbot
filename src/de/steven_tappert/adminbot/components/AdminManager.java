@@ -2,6 +2,7 @@ package de.steven_tappert.adminbot.components;
 
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import de.steven_tappert.tools.Logger;
 import org.jxmpp.jid.Jid;
 
@@ -69,12 +70,15 @@ public class AdminManager {
         user.level = 4;
         users.add(user);
 
+        this.users = users;
+
         writeUsers();
     }
 
     public void writeUsers() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.disable(MapperFeature.AUTO_DETECT_GETTERS);
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         try {
             mapper.writeValue(new File(usersFilename), users);
