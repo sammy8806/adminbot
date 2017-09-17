@@ -23,7 +23,7 @@ public class ts3admin extends XmppChatCmd {
     private adminbot adminbot = null;
 
     public ts3admin() {
-        setCommandName("admin");
+        setCommandName("ts3admin");
         setCommandDescription("Get Admin Controls");
         setCommandSyntax("!ts3admin [add|del|list|go] <uid|chan> [<jid>] [<name>]");
         setCommandAuthLevel(4);

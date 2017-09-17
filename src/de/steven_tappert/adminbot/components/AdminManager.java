@@ -37,7 +37,7 @@ public class AdminManager {
 
     public AdminUser getAdmin(Jid jid) {
         for (AdminUser admin : users) {
-            if (admin.jid.equalsIgnoreCase(jid.toString()))
+            if (admin.jid.equalsIgnoreCase(jid.asBareJid().toString()))
                 return admin;
         }
         return null;
@@ -116,5 +116,14 @@ public class AdminManager {
             Logger.log(this, "loadUsers", "info", "Imported admin-user: " + user.name);
             addAdmin(user);
         }
+    }
+
+    public Integer getUserLevelWithJid(Jid from) {
+        Integer level = -1;
+        AdminUser admin = this.getAdmin(from.asBareJid());
+        if (admin != null) {
+            level = admin.level;
+        }
+        return level;
     }
 }

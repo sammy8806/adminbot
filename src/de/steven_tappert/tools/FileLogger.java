@@ -20,13 +20,13 @@ public class FileLogger extends Logger {
         this.filename = filename;
         this.path = path;
 
-        if(!fileOpened)
+        if (!fileOpened)
             openFile();
     }
 
     public boolean openFile() {
         try {
-            logFile = new BufferedWriter(new FileWriter(filename+".log", true));
+            logFile = new BufferedWriter(new FileWriter(filename + ".log", true));
             fileOpened = true;
         } catch (IOException e) {
             e.printStackTrace();
@@ -36,7 +36,7 @@ public class FileLogger extends Logger {
     }
 
     protected void log(String line, Boolean logToFile) {
-        log("debug",line);
+        logShort("debug", line);
     }
 
     protected String logLine(String line) {
@@ -45,7 +45,7 @@ public class FileLogger extends Logger {
             logFile.newLine();
             flush();
         } catch (NullPointerException npe) {
-            log("FileStream cannot be written! File open? "+filename, false);
+            log("FileStream cannot be written! File open? " + filename, false);
 
             log("Try to open File ...", false);
             openFile();

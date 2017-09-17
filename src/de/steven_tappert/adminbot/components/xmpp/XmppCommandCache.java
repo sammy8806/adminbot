@@ -24,14 +24,11 @@ public class XmppCommandCache {
         XmppChatCommand cmd = null;
         if (!commands.containsKey(command)) {
             String classpath = "de.steven_tappert.adminbot.components.xmpp.ChatCommands." + command;
-            Logger.log(XmppCommandCache.class.getSimpleName(), "getCommand", "debug", "Commands unkown, try to load ... [" + classpath + "]");
+            Logger.log(XmppCommandCache.class.getSimpleName(), "getCommand", "debug", "Commands unkown, try to load ... [%s]", classpath);
             try {
                 Class cls = XmppCommandCacheClassLoader.loadClass(classpath);
                 cmd = (XmppChatCommand) cls.newInstance();
-            } catch (InstantiationException e) {
-                Logger.log(XmppCommandCache.class.getSimpleName(), "getCommand", "error", e.getMessage());
-                e.printStackTrace();
-            } catch (IllegalAccessException e) {
+            } catch (InstantiationException | IllegalAccessException e) {
                 Logger.log(XmppCommandCache.class.getSimpleName(), "getCommand", "error", e.getMessage());
                 e.printStackTrace();
             }

@@ -56,9 +56,11 @@ public class adminbot {
             Constructor dummy = cls.getConstructor((Class<BotComponent>) null);
             dummy.newInstance((Object) null);
 
+            // TODO: Move in thread?
+
             components.put(componentName, instance);
         } catch (ClassNotFoundException e) {
-            Logger.log("error", "Class \"" + classpath + "\" not found!");
+            Logger.logShort("error", "Class \"%s\" not found!", classpath);
             e.printStackTrace();
         } catch (SecurityException e) {
             e.printStackTrace();

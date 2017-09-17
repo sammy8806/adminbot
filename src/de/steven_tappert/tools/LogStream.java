@@ -20,7 +20,7 @@ public class LogStream extends OutputStream {
 
 
     public void flush() {
-        Logger.log("fatal-error", error.toString());
+        Logger.logShort("fatal-error", error.toString());
         error.delete(0,error.length());
     }
 

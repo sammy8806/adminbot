@@ -1,17 +1,22 @@
 package de.steven_tappert.adminbot.components.ts3;
 
 import com.github.theholywaffle.teamspeak3.TS3Api;
+import com.github.theholywaffle.teamspeak3.TS3ApiAsync;
 import com.github.theholywaffle.teamspeak3.TS3Config;
 import com.github.theholywaffle.teamspeak3.TS3Query;
 import com.github.theholywaffle.teamspeak3.api.ClientProperty;
+import com.github.theholywaffle.teamspeak3.api.CommandFuture;
 import com.github.theholywaffle.teamspeak3.api.event.*;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
+import com.github.theholywaffle.teamspeak3.api.wrapper.ClientInfo;
+import com.github.theholywaffle.teamspeak3.commands.Command;
 import de.steven_tappert.adminbot.adminbot;
 import de.steven_tappert.adminbot.components.AdminManager;
 import de.steven_tappert.adminbot.components.AdminUser;
 import de.steven_tappert.adminbot.components.ts3.listener.TS3ChatListener;
 import de.steven_tappert.adminbot.components.xmpp.XmppBotCore;
+import de.steven_tappert.tools.Logger;
 import de.steven_tappert.tools.SingletonHelper;
 import org.jivesoftware.smack.chat2.ChatManager;
 
@@ -21,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 
 import static de.steven_tappert.tools.Logger.log;
+import static de.steven_tappert.tools.Logger.logShort;
 
 public class Ts3BotCore {
     private String username;
@@ -29,7 +35,7 @@ public class Ts3BotCore {
 
     private TS3Config config;
     private TS3Query query;
-    private TS3Api api;
+    private TS3ApiAsync api;
 
     public ChatManager chatManager;
     public AdminManager adminManager;
@@ -69,7 +75,7 @@ public class Ts3BotCore {
         log(this, "connect", "info", "Connect");
         this.query = new TS3Query(config);
         this.query.connect();
-        this.api = query.getApi();
+        this.api = query.getAsyncApi();
 
         login();
 
@@ -100,9 +106,13 @@ public class Ts3BotCore {
                 super.onClientJoin(e);
                 log(this, "onClientJoin", "Debug", "Client join: " + e.getClientNickname());
                 Integer clid = e.getClientId();
-                Client client = api.getClientInfo(clid);
-                userManager.registerUser(clid, client);
-                log(this, "onClientJoin", "Debug", "Client join (" + client.getNickname() + ") #" + clid);
+                CommandFuture<ClientInfo> client = api.getClientInfo(clid);
+                try {
+                    userManager.registerUser(clid, client.get());
+                    log(this, "onClientJoin", "Debug", "Client join (" + client.get().getNickname() + ") #" + clid);
+                } catch (InterruptedException e1) {
+                    logShort("error", "Could not join channel #%d (No TS3 response)", clid);
+                }
                 scanMasterUsers();
                 log(this, "onClientJoin", "Debug", "Got " + userManager.getUserCount() + " users");
             }
@@ -125,10 +135,15 @@ public class Ts3BotCore {
                 Integer newCh = e.getTargetChannelId();
                 log(this, "onClientJoin", "Debug", "Client moved: " + user.getNickname() + " " + oldCh + "->" + newCh);
 
-                userManager.updateUser(user.getId(), api.getClientInfo(user.getId()));
+                CommandFuture<ClientInfo> clientInfo = api.getClientInfo(user.getId());
+                try {
+                    userManager.updateUser(user.getId(), clientInfo.get());
+                } catch (InterruptedException e1) {
+                    logShort("error", "Could not get ClientInfo for %s (no TS3 response)", user.getId());
+                }
                 log(this, "onClientJoin", "Debug", "Updated client: " + user.getNickname() + " " + user.getChannelId());
 
-                if(e.getClientId() == getClientId()) return;
+                if (e.getClientId() == getClientId()) return;
                 scanMasterUsers();
             }
         });
@@ -163,11 +178,24 @@ public class Ts3BotCore {
 
     private void getClientData() {
         log(this, "getClientData", "Debug", "Getting local client id");
-        this.clientId = api.whoAmI().getId();
+        try {
+            this.clientId = api.whoAmI().get().getId();
+        } catch (InterruptedException e) {
+            Logger.error("Could not get clientId (no TS3 response) ... retrying");
+            getClientData();
+            return;
+        }
         log(this, "getClientData", "Debug", "ClientId: " + this.clientId);
 
         log(this, "getClientData", "Debug", "Getting active user list");
-        List<Client> clients = api.getClients();
+        List<Client> clients = null;
+        try {
+            clients = api.getClients().get();
+        } catch (InterruptedException e) {
+            Logger.error("Could not get client list (no TS3 response) ... retrying");
+            getClientData();
+            return;
+        }
         for (Client client : clients) {
             userManager.registerUser(client.getId(), client);
         }
@@ -185,10 +213,15 @@ public class Ts3BotCore {
 
     private boolean selectDefaultServer(Integer defaultServer) {
         log(this, "selectDefaultServer", "info", "Selecting");
-        if (api.selectVirtualServerById(defaultServer)) {
+        try {
+            if (api.selectVirtualServerById(defaultServer).get()) {
 
-            log(this, "selectDefaultServer", "info", "Selected defaultServer " + defaultServer);
-            return true;
+                log(this, "selectDefaultServer", "info", "Selected defaultServer " + defaultServer);
+                return true;
+            }
+        } catch (InterruptedException e) {
+            Logger.error("Could not select server (No TS3 response) ... retrying");
+            return selectDefaultServer(defaultServer);
         }
 
         log(this, "selectDefaultServer", "info", "Failed selecting defaultServer " + defaultServer);
@@ -197,20 +230,30 @@ public class Ts3BotCore {
 
     private boolean login() {
         log(this, "login", "info", "Login");
-        if (this.api.login(username, password)) {
-            this._connected = true;
-            log(this, "login", "info", "Login seems successful");
-            return true;
+        try {
+            if (this.api.login(username, password).get()) {
+                this._connected = true;
+                log(this, "login", "info", "Login seems successful");
+                return true;
+            }
+        } catch (InterruptedException e) {
+            Logger.error("Could not login (No TS3 response) ... retrying");
+            return login();
         }
 
         return false;
     }
 
     public boolean setClientName(String clientName) {
-        if (api.setNickname(clientName)) {
-            log(this, "setClientName", "info", "Set Nickname to " + clientName);
-            this.clientName = clientName;
-            return true;
+        try {
+            if (api.setNickname(clientName).get()) {
+                log(this, "setClientName", "info", "Set Nickname to " + clientName);
+                this.clientName = clientName;
+                return true;
+            }
+        } catch (InterruptedException e) {
+            Logger.error("Could net set the clientName (No TS3 response) ... retrying");
+            return setClientName(clientName);
         }
 
         log(this, "setClientName", "info", "Could not set nickname");
@@ -222,7 +265,12 @@ public class Ts3BotCore {
     }
 
     public List<Channel> getChannels() {
-        return api.getChannels();
+        try {
+            return api.getChannels().get();
+        } catch (InterruptedException e) {
+            Logger.error("Could not get channel list (No TS3 response) ... retrying");
+            return getChannels();
+        }
     }
 
     public boolean goChannel(int cid) {

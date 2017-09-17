@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import static de.steven_tappert.tools.Logger.log;
+import static de.steven_tappert.tools.Logger.logShort;
 
 public class XmppBotCore extends XMPPTCPConnection {
 
@@ -31,7 +32,7 @@ public class XmppBotCore extends XMPPTCPConnection {
 
     private PresenceManager pM;
     private IncomingMessageManager mM;
-    private Integer watchdogTimer = 7 * 1000;
+    private Integer watchdogTimer = 500;
 
     private boolean watchdogEnable = true;
     private boolean watchdogReconnect = true;
@@ -48,7 +49,7 @@ public class XmppBotCore extends XMPPTCPConnection {
             watchdog.start();
         }
 
-        log("debug", "Construct");
+        logShort("debug", "Construct");
         Thread holdOpen = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -79,7 +80,7 @@ public class XmppBotCore extends XMPPTCPConnection {
         // Register some Handlers
         rM.getRoster().addRosterListener(new XmppRosterListener());
         ChatManager chatManager = ChatManager.getInstanceFor(botXmppCore);
-        chatManager.addIncomingListener(new IncomingMessageManager());
+        chatManager.addIncomingListener(new IncomingMessageManager().setCore(this));
         chatManager.addOutgoingListener((to, message, chat) -> {
             message.setType(Message.Type.chat);
         });

@@ -26,7 +26,7 @@ public class XmppChatCmd implements XmppChatCommand {
     }
 
     public void runCommand(XMPPConnection conn, Chat chat, Message message) throws XMPPException {
-        if(!message.getFrom().getDomain().toString().equals("dark-it.net"))
+        if (!message.getFrom().getDomain().toString().equals("dark-it.net"))
             return;
     }
 
@@ -59,7 +59,7 @@ public class XmppChatCmd implements XmppChatCommand {
     }
 
     public void setCommandSyntax(String commandSyntax) {
-        this.commandSyntax = commandSyntax;
+        this.commandSyntax += (!this.commandSyntax.equals("") ? "\n" : "") + commandSyntax;
     }
 
     public void setCommandAuthLevel(Integer commandAuthLevel) {
