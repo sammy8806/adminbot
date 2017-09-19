@@ -7,16 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39cd1785-c87d-4cba-a098-df684e31f463" name="Default" comment="added xmpp commands and updated logging&#10;and stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_theholywaffle_teamspeak3_api_1_0_15_SNAPSHOT.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/stefan1200/jts3serverquery/JTS3ServerQuery.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/stefan1200/jts3serverquery/TeamspeakActionListener.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/stefan1200/jts3serverqueryexample/JTS3ServerQueryExample.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/adminbot_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/adminbot_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminbot.iml" afterPath="$PROJECT_DIR$/adminbot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3BotCore.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3BotCore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3Component.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/ts3/Ts3Component.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/admin.java" afterPath="$PROJECT_DIR$/src/de/steven_tappert/adminbot/components/xmpp/ChatCommands/admin.java" />
@@ -958,7 +952,7 @@
       <workItem from="1505632940651" duration="2328000" />
       <workItem from="1505729894515" duration="154000" />
       <workItem from="1505730068216" duration="58000" />
-      <workItem from="1505833889409" duration="5699000" />
+      <workItem from="1505833889409" duration="5732000" />
     </task>
     <task id="LOCAL-00001" summary="crapkilling&#10;updated to newest smack version with maven&#10;removing muc-stuf for convenience">
       <created>1505358379014</created>
@@ -1058,11 +1052,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505834283344</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed deps">
+      <created>1505840226545</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1505840226546</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91527000" />
+    <option name="totallyTimeSpent" value="91560000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1140,7 +1141,8 @@
     <MESSAGE value="replaced ts3 masterUsers with adminManager" />
     <MESSAGE value="added xmpp commands and updated logging&#10;and stuff" />
     <MESSAGE value="fixed multiline xmpp messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed multiline xmpp messages" />
+    <MESSAGE value="fixed deps" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed deps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
