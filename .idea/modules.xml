@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/adminbot.iml" filepath="$PROJECT_DIR$/adminbot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/teamspeak3-api.iml" filepath="$PROJECT_DIR$/../TeamSpeak-3-Java-API/teamspeak3-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adminbot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/adminbot_main.iml" group="adminbot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adminbot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/adminbot_test.iml" group="adminbot" />
     </modules>
   </component>
 </project>

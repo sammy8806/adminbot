@@ -2,10 +2,8 @@ package de.steven_tappert.adminbot.components.ts3;
 
 import com.github.theholywaffle.teamspeak3.TS3Config;
 import de.steven_tappert.adminbot.BotComponent;
-import de.steven_tappert.adminbot.components.xmpp.XmppBotCore;
 import de.steven_tappert.adminbot.components.xmpp.manager.ConfigManager;
 import de.steven_tappert.tools.SingletonHelper;
-
 
 import java.util.Properties;
 
@@ -36,7 +34,6 @@ public class Ts3Component implements BotComponent {
 
         final TS3Config config = new TS3Config();
         config.setHost(Hostname);
-        config.setEnableCommunicationsLogging(true);
         config.setQueryPort(Port);
 
         return startComponent(config);

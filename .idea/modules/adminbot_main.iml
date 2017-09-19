@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="adminbot:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="1.2" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src">
+      <sourceFolder url="file://$MODULE_DIR$/../../src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-im:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-extensions:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-java7:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-tcp:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.theholywaffle:teamspeak3-api:1.0.14" level="project" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-core:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-resolver-javax:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.igniterealtime.smack:smack-sasl-javax:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: xpp3:xpp3:1.1.4c" level="project" />
+    <orderEntry type="library" name="Gradle: org.jxmpp:jxmpp-core:0.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jxmpp:jxmpp-jid:0.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jxmpp:jxmpp-util-cache:0.5.0" level="project" />
+  </component>
+</module>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ts3api">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/../TeamSpeak-3-Java-API/src/main/java" />
-    </SOURCES>
-  </library>
-</component>

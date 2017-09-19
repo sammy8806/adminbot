@@ -1,6 +1,8 @@
 out/
 run/
+build/
 *.log
 *.properties
 *.json
 *.swp
+*.gradle
