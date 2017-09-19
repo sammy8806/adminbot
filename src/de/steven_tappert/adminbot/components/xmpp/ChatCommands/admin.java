@@ -49,6 +49,7 @@ public class admin extends XmppChatCmd {
         HashMap<String, String> options = new HashMap<>();
         options.put("ts3_redirect_disable", "Disables the TS3->XMPP redirect receive");
         options.put("xmpp_chat_disable", "Disables the XMPP->XMPP Chat receive");
+        options.put("ts3_own_message_enable", "Disables the XMPP Message with your own TS3 Message");
         return options;
     }
 

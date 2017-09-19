@@ -44,11 +44,17 @@ public class TS3ChatListener extends TS3EventAdapter {
                     }
                     if (adminUser.ts3uid.contains(e.getInvokerUniqueId())) {
                         log(this, "onTextMessage", "Debug", "Not sending the message back to sender");
-                        continue;
+                        if (adminUser.config.getOrDefault("ts3_own_message_enable", false)) {
+                            log(this, "onTextMessage", "Debug", "User has set 'ts3_own_message_enable' ... sending");
+                        } else {
+                            continue;
+                        }
                     }
-                    if (adminUser.config != null && adminUser.config.getOrDefault("ts3_redirect_disable", false)) {
-                        log(this, "onTextMessage", "Info", "User has set 'ts3_redirect_disable'");
-                        continue;
+                    if (adminUser.config != null) {
+                        if (adminUser.config.getOrDefault("ts3_redirect_disable", false)) {
+                            log(this, "onTextMessage", "Info", "User has set 'ts3_redirect_disable'");
+                            continue;
+                        }
                     }
 
                     List<String> bbTags = new LinkedList<>();
