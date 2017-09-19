@@ -3,3 +3,4 @@ port=10011
 user=##username##
 password=##password##
 defaultserver=##serverid##
+clientname=##client name##
