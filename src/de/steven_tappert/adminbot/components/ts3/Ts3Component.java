@@ -12,6 +12,7 @@ import java.util.Properties;
 public class Ts3Component implements BotComponent {
 
     private Ts3BotCore core;
+    private ConfigManager configManager;
 
     private String Username;
     private String Password;
@@ -24,7 +25,7 @@ public class Ts3Component implements BotComponent {
 
     @Override
     public boolean loadComponent() {
-        ConfigManager configManager = new ConfigManager("ts3.properties");
+        configManager = new ConfigManager("ts3.properties");
         Properties properties = configManager.getProperties();
 
         String Hostname = properties.getProperty("hostname");
@@ -55,6 +56,7 @@ public class Ts3Component implements BotComponent {
             core.setUsername(Username);
             core.setPassword(Password);
             core.setDefaultServer(DefaultServer);
+            core.setDefaultClientName(configManager.getProperties().getProperty("clientname", "TS3Bot"));
             core.connect();
 
             return true;

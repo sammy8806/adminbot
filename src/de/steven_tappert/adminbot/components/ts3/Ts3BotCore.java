@@ -32,6 +32,7 @@ public class Ts3BotCore {
     private String username;
     private String password;
     private Integer defaultServer;
+    private String defaultClientName;
 
     private TS3Config config;
     private TS3Query query;
@@ -53,6 +54,8 @@ public class Ts3BotCore {
         this.channelManager = new ChannelManager();
         this.chatManager = ChatManager.getInstanceFor((XmppBotCore) SingletonHelper.getInstance("XmppBotCore"));
         this.adminManager = ((adminbot) SingletonHelper.getInstance("adminbot")).adminManager;
+
+        this.defaultClientName = "";
     }
 
     void setUsername(String username) {
@@ -81,7 +84,7 @@ public class Ts3BotCore {
 
         // api.getServerIdByPort(9987)
         selectDefaultServer(defaultServer);
-        setClientName("TS3Bot");
+        setClientName(defaultClientName);
         getClientData();
 
         api.registerEvent(TS3EventType.TEXT_CHANNEL, 0);
@@ -282,5 +285,9 @@ public class Ts3BotCore {
 
     public void sendMessageToChannel(String msg) {
         api.sendChannelMessage(msg);
+    }
+
+    public void setDefaultClientName(String defaultClientName) {
+        this.defaultClientName = defaultClientName;
     }
 }
