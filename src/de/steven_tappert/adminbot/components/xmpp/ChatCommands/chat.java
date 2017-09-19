@@ -35,7 +35,6 @@ public class chat extends XmppChatCmd {
             ts3BotCore = (Ts3BotCore) SingletonHelper.getInstance("Ts3BotCore");
         }
 
-        String[] args = message.getBody().split("\\s");
         String source = chat.getXmppAddressOfChatPartner().toString();
 
         StringBuilder buf = new StringBuilder();
@@ -43,6 +42,7 @@ public class chat extends XmppChatCmd {
             buf.append(source);
             buf.append(": ");
         }
+        buf.append(message.getBody());
         for (String arg : args) {
             buf.append(" ");
             buf.append(arg);
