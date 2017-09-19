@@ -94,7 +94,7 @@ public class admin extends XmppChatCmd {
                         for (String uid : tmpUser.ts3uid) {
                             msg += String.format("  - %s\n", uid);
                         }
-                        if (tmpUser.config != null) {
+                        if (tmpUser.config != null && tmpUser.config.size() > 0) {
                             msg += "  Config options:\n";
                             for (Map.Entry<String, Boolean> config : tmpUser.config.entrySet()) {
                                 msg += String.format("  - %s: %b\n", config.getKey(), config.getValue());
