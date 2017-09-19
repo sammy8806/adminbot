@@ -43,10 +43,6 @@ public class chat extends XmppChatCmd {
             buf.append(": ");
         }
         buf.append(message.getBody());
-        for (String arg : args) {
-            buf.append(" ");
-            buf.append(arg);
-        }
 
         Logger.debug("Sending message (%d Chars) to TS3", buf.length());
         ts3BotCore.sendMessageToChannel(buf.toString().trim());
