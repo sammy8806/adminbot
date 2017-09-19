@@ -9,6 +9,7 @@ import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.chat2.Chat;
 import org.jivesoftware.smack.packet.Message;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class info extends XmppChatCmd {
@@ -51,11 +52,20 @@ public class info extends XmppChatCmd {
             for (String uid : user.ts3uid) {
                 msg += String.format("  - %s\n", uid);
             }
+
+            HashMap<String, Boolean> configMap = new HashMap<>();
+
             if (user.config != null) {
-                msg += "  Config options:\n";
-                for (Map.Entry<String, Boolean> config : user.config.entrySet()) {
-                    msg += String.format("  - %s: %s\n", config.getKey(), config.getValue());
-                }
+                configMap.putAll(user.config);
+            }
+
+            for (String key : admin.getConfigOptions().keySet()) {
+                configMap.putIfAbsent(key, false);
+            }
+
+            msg += "  Config options:\n";
+            for (Map.Entry<String, Boolean> config : configMap.entrySet()) {
+                msg += String.format("  - %s: %s\n", config.getKey(), config.getValue());
             }
             msg += "\nWrite !help for a list of usable commands";
 

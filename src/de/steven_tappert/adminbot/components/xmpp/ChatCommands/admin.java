@@ -32,7 +32,7 @@ public class admin extends XmppChatCmd {
         setCommandSyntax("!admin list users [regex]");
         setCommandSyntax("");
         setCommandSyntax("Config-Options:");
-        this.getConfigOptions().forEach((name, desc) -> {
+        getConfigOptions().forEach((name, desc) -> {
             setCommandSyntax(String.format("- %s (%s)", name, desc));
         });
 
@@ -45,7 +45,7 @@ public class admin extends XmppChatCmd {
         }
     }
 
-    public HashMap<String, String> getConfigOptions() {
+    public static HashMap<String, String> getConfigOptions() {
         HashMap<String, String> options = new HashMap<>();
         options.put("ts3_redirect_disable", "Disables the TS3->XMPP redirect receive");
         options.put("xmpp_chat_disable", "Disables the XMPP->XMPP Chat receive");
@@ -147,18 +147,21 @@ public class admin extends XmppChatCmd {
                 if (user.config == null) {
                     user.config = new HashMap<>();
                 }
-                if (args[3].equalsIgnoreCase("ts3_redirect_disable")) {
-                    if (args[2].equalsIgnoreCase("enable")) {
-                        user.config.putIfAbsent("ts3_redirect_disable", true);
-                        chat.send(String.format("Enabled TS3 Redirect for %s", user.name));
-                        shouldSendSyntax = false;
-                        rewriteUsers = true;
-                    } else if (args[2].equalsIgnoreCase("disable")) {
-                        user.config.putIfAbsent("ts3_redirect_disable", false);
-                        chat.send(String.format("Enabled TS3 Redirect for %s", user.name));
-                        shouldSendSyntax = false;
-                        rewriteUsers = true;
+                String flag = args[3];
+                Boolean state = null;
+                if (args[2].equalsIgnoreCase("enable")) {
+                    state = true;
+                } else if (args[2].equalsIgnoreCase("disable")) {
+                    state = false;
+                }
+                if (!flag.equals("") && state != null && !getConfigOptions().getOrDefault(flag, "").equals("")) {
+                    rewriteUsers = changeUserFeature(user, flag, state);
+                    String actionName = state ? "Enabled" : "Disabled";
+
+                    if (rewriteUsers) {
+                        chat.send(String.format("%s %s for %s", actionName, flag, user.name));
                     }
+                    shouldSendSyntax = false;
                 }
             }
 
@@ -172,6 +175,16 @@ public class admin extends XmppChatCmd {
         } catch (SmackException.NotConnectedException | InterruptedException | NullPointerException | XmppStringprepException e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean changeUserFeature(AdminUser user, String flag, Boolean state) {
+        Boolean featureActive = user.config.getOrDefault(flag, null);
+        if (featureActive == null) {
+            user.config.put(flag, state);
+        } else {
+            user.config.replace(flag, state);
+        }
+        return true;
     }
 
     private AdminUser getAdminUser(Chat chat) throws XmppStringprepException, SmackException.NotConnectedException, InterruptedException {
