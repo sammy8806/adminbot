@@ -109,7 +109,7 @@ public class admin extends XmppChatCmd {
                 if (user == null) return;
             }
 
-            if (args.length > 3 && args[2].matches("(get|set|add|del)") && user != null) {
+            if (args.length > 3 && args[2].matches("(get|set)") && user != null) {
                 if (args[3].equalsIgnoreCase("level")) {
                     if (args[2].equalsIgnoreCase("set") && args.length > 4) {
                         user.level = Integer.valueOf(args[4]);
@@ -138,6 +138,33 @@ public class admin extends XmppChatCmd {
                         rewriteUsers = true;
                     } else if (args[2].equalsIgnoreCase("get")) {
                         chat.send(String.format("Name of %s: %s", user.jid, user.name));
+                        shouldSendSyntax = false;
+                    }
+                }
+            }
+
+            if (args.length > 3 && args[2].matches("(add|del)") && user != null) {
+                if (args[3].equalsIgnoreCase("ts3")) {
+                    if (args[2].equalsIgnoreCase("add") && args.length > 4) {
+                        user.ts3uid.add(args[4]);
+                        chat.send(String.format("Added TS3 Identity has been added: %s", args[4]));
+                        Message msg = new Message();
+                        msg.setBody(String.format("TS3 Client Ident Added: %s", args[4]));
+                        Chat newChat = ChatManager.getInstanceFor(conn).chatWith(JidCreate.entityBareFrom(user.jid));
+                        newChat.send(msg);
+                        shouldSendSyntax = false;
+                        rewriteUsers = true;
+                    } else if (args[2].equalsIgnoreCase("del")) {
+                        if (user.ts3uid.remove(args[4])) {
+                            chat.send(String.format("Removed TS3 Identity has been added: %s", args[4]));
+                            Message msg = new Message();
+                            msg.setBody(String.format("TS3 Client Ident Added: %s", args[4]));
+                            Chat newChat = ChatManager.getInstanceFor(conn).chatWith(JidCreate.entityBareFrom(user.jid));
+                            newChat.send(msg);
+                            rewriteUsers = true;
+                        } else {
+                            chat.send("TS3 UID not found");
+                        }
                         shouldSendSyntax = false;
                     }
                 }
@@ -172,7 +199,9 @@ public class admin extends XmppChatCmd {
             if (shouldSendSyntax) {
                 sendSyntax(chat);
             }
-        } catch (SmackException.NotConnectedException | InterruptedException | NullPointerException | XmppStringprepException e) {
+        } catch
+                (SmackException.NotConnectedException | InterruptedException | NullPointerException | XmppStringprepException
+                        e) {
             e.printStackTrace();
         }
     }
