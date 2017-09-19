@@ -148,7 +148,7 @@ public class admin extends XmppChatCmd {
                 if (args[3].equalsIgnoreCase("ts3")) {
                     if (args[2].equalsIgnoreCase("add") && args.length > 4) {
                         user.ts3uid.add(args[4]);
-                        chat.send(String.format("Added TS3 Identity has been added: %s", args[4]));
+                        chat.send(String.format("Added TS3 Identity: %s", args[4]));
                         Message msg = new Message();
                         msg.setBody(String.format("TS3 Client Ident Added: %s", args[4]));
                         Chat newChat = ChatManager.getInstanceFor(conn).chatWith(JidCreate.entityBareFrom(user.jid));
